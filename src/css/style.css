@@ -1,0 +1,40 @@
+.word-style .nav {
+  background-color: #2b579a; }
+  .word-style .nav .nav-item a {
+    color: white;
+    border: 0;
+    border-radius: 0; }
+  .word-style .nav .nav-item a.active {
+    color: #2b579a !important;
+    background-color: #edebe9; }
+  .word-style .nav .nav-item a:hover:not(.active) {
+    background-color: #124078;
+    color: white;
+    border: 0;
+    border-radius: 0; }
+.word-style .tab-pane {
+  background-color: #edebe9 !important;
+  min-height: 80px; }
+.word-style .tab-pane.active {
+  background-color: #edebe9 !important;
+  animation: slide-down 0.15s; }
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    background-color: #edebe9; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #edebe9; } }
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    background-color: #edebe9; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #edebe9; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+$word_color: #2b579a;
+$word_color_hover: #124078;
+
+$excel_color: #217346;
+
+$powerpoint_color: #b7472a;
+
+$access_color: #a4373a;
+
+$publisher_color: #077568;
+
+$onenote_color: #7719aa;
+
+$active_tab_color: #edebe9;
+
+
+.word-style {
+  .nav {
+    background-color: $word_color;
+
+    .nav-item {
+
+      a {
+        color: white;
+        border: 0;
+        border-radius: 0;
+      }
+
+      a.active {
+        color: $word_color !important;
+        background-color: $active_tab_color;
+      }
+
+
+      a:hover:not(.active) {
+        background-color: $word_color_hover;
+        color: white;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .tab-pane {
+    background-color: $active_tab_color !important;
+    min-height: 80px;
+
+  }
+
+  .tab-pane.active {
+    background-color: $active_tab_color !important;
+
+    animation: slide-down 0.15s;
+  }
+
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+      background-color: $active_tab_color;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      background-color: $active_tab_color;
+    }
+  }
+  @-webkit-keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+      background-color: $active_tab_color;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      background-color: $active_tab_color;
+    }
+  }
+}
+
+.excel-style {
+
+}
+
+
+
