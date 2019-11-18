@@ -3,7 +3,8 @@
   .word-style .nav .nav-item a {
     color: white;
     border: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    padding-bottom: 7px !important; }
   .word-style .nav .nav-item a.active {
     color: #2b579a !important;
     background-color: #edebe9; }
@@ -11,7 +12,10 @@
     background-color: #124078;
     color: white;
     border: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    padding-bottom: 7px !important; }
+.word-style .tab-content {
+  background-color: #edebe9 !important; }
 .word-style .tab-pane {
   background-color: #edebe9 !important;
   min-height: 80px; }
