@@ -1,26 +1,82 @@
+/**
+  Word-Tab-Style
+ */
 .word-style .nav {
   background-color: #2b579a; }
-  .word-style .nav .nav-item a {
-    color: white;
-    border: none;
-    border-radius: 0; }
   .word-style .nav .nav-item a.active {
-    color: #2b579a !important;
-    background-color: #edebe9; }
+    color: #2b579a !important; }
   .word-style .nav .nav-item a:hover:not(.active) {
-    background-color: #124078;
-    color: white;
-    border: none;
-    border-radius: 0; }
-.word-style .tab-content {
+    background-color: #124078; }
+
+/**
+  Excel-Tab-Style
+ */
+.excel-style .nav {
+  background-color: #217346; }
+  .excel-style .nav .nav-item a.active {
+    color: #217346 !important; }
+  .excel-style .nav .nav-item a:hover:not(.active) {
+    background-color: #0e5c2f; }
+
+/**
+  Powerpoint-Tab-Style
+ */
+.powerpoint-style .nav {
+  background-color: #b7472a; }
+  .powerpoint-style .nav .nav-item a.active {
+    color: #b7472a !important; }
+  .powerpoint-style .nav .nav-item a:hover:not(.active) {
+    background-color: #a92b1a; }
+
+/**
+  Access-Tab-Style
+ */
+.access-style .nav {
+  background-color: #a4373a; }
+  .access-style .nav .nav-item a.active {
+    color: #a4373a !important; }
+  .access-style .nav .nav-item a:hover:not(.active) {
+    background-color: #912c2f; }
+
+/**
+  Publisher-Tab-Style
+ */
+.publisher-style .nav {
+  background-color: #077568; }
+  .publisher-style .nav .nav-item a.active {
+    color: #077568 !important; }
+  .publisher-style .nav .nav-item a:hover:not(.active) {
+    background-color: #23645c; }
+
+/**
+  OneNote-Tab-Style
+ */
+.onenote-style .nav {
+  background-color: #80397b; }
+  .onenote-style .nav .nav-item a.active {
+    color: #80397b !important; }
+  .onenote-style .nav .nav-item a:hover:not(.active) {
+    background-color: #6c2f68; }
+
+.microsoft-nav .nav .nav-item a {
+  color: white;
+  border: none;
+  border-radius: 0; }
+.microsoft-nav .nav .nav-item a.active {
+  background-color: #edebe9; }
+.microsoft-nav .nav .nav-item a:hover:not(.active) {
+  color: white;
+  border: none;
+  border-radius: 0; }
+.microsoft-nav .tab-content {
   background-color: #edebe9 !important;
   z-index: 99;
   position: relative; }
-.word-style .tab-pane {
+.microsoft-nav .tab-pane {
   background-color: #edebe9 !important;
   min-height: 80px;
   margin-top: -1px; }
-.word-style .tab-pane.active {
+.microsoft-nav .tab-pane.active {
   background-color: #edebe9 !important;
   animation: slide-down 0.15s; }
 @keyframes slide-down {

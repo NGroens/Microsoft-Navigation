@@ -3,42 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <title>Microsoft-Navigation Test</title>
-    <link rel="stylesheet" type="text/css" href="../src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 </head>
-<body>
-<div class="word-style">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact">Contact</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
-            Main-Menu<br>
-            Main-Menu<br>
-            Main-Menu<br>
+<body class="bg-light">
+<style>
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        position: relative;
+    }
+</style>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="nav">
+        <a class="navbar-brand" href="#">Microsoft-Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#word">Word</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#excel">Excel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#powerpoint">PowerPoint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#access">Access</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publisher">Publisher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#onenote">OneNote</a>
+                </li>
+            </ul>
         </div>
-        <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            Second-Menu<br>
-            Second-Menu<br>
-            Second-Menu<br>
+    </nav>
+</header>
 
+<main role="main" class="container">
+    <br>
+    <h1>Microsoft-Navigation</h1>
+    <hr>
+    <div data-spy="scroll" data-target="#nav" data-offset="0">
+        <div class="row" id="word">
+            <div class="col-md-8">
+                <h3>#1 Word-Style</h3><br>
+
+            </div>
+            <div class="col-md-12">
+                <div class="microsoft-nav word-style">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="word-home-tab" data-toggle="tab" href="#word_1" role="tab">Word
+                                1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="word-profile-tab" data-toggle="tab" href="#word_2"
+                               role="tab">Word
+                                2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="word-contact-tab" data-toggle="tab" href="#word_3" role="tab">Word
+                                3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane " id="word_1" role="tabpanel">
+                            Main-Menu<br>
+                            Main-Menu<br>
+                            Main-Menu<br>
+                        </div>
+                        <div class="tab-pane active" id="word_2" role="tabpanel">
+                            Second-Menu<br>
+                            Second-Menu<br>
+                            Second-Menu<br>
+
+                        </div>
+                        <div class="tab-pane " id="word_3" role="tabpanel">
+                            Third-Menu<br>
+                            Third-Menu<br>
+                            Third-Menu<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <pre>
+                    <code class="language-html" data-lang="html">
+                &lt;div class="microsoft-nav word-style"&gt;
+                    &lt;ul class="nav nav-tabs" role="tablist"&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a class="nav-link" id="word-home-tab" data-toggle="tab" href="#word_1" role="tab"&gt;Word
+                                1&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a class="nav-link active" id="word-profile-tab" data-toggle="tab" href="#word_2"
+                               role="tab"&gt;Word
+                                2&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="nav-item"&gt;
+                            &lt;a class="nav-link" id="word-contact-tab" data-toggle="tab" href="#word_3" role="tab"&gt;Word
+                                3&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class="tab-content"&gt;
+                        &lt;div class="tab-pane " id="word_1" role="tabpanel"&gt;
+                            Main-Menu&lt;br&gt;
+                            Main-Menu&lt;br&gt;
+                            Main-Menu&lt;br&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tab-pane active" id="word_2" role="tabpanel"&gt;
+                            Second-Menu&lt;br&gt;
+                            Second-Menu&lt;br&gt;
+                            Second-Menu&lt;br&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class="tab-pane " id="word_3" role="tabpanel"&gt;
+                            Third-Menu&lt;br&gt;
+                            Third-Menu&lt;br&gt;
+                            Third-Menu&lt;br&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
         </div>
-        <div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            Third-Menu<br>
-            Third-Menu<br>
-            Third-Menu<br>
+        <hr>
+
+        <div class="row" id="excel">
+            <div class="col-md-12"><h2>#2 Excel-Style</h2></div><br>
+            <div class="col-md-12">
+                <div class="microsoft-nav excel-style">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#excel_1" role="tab">Excel 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#excel_2" role="tab">Excel 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#excel_3" role="tab">Excel 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane " id="excel_1" role="tabpanel">
+                            Main-Menu<br>
+                            Main-Menu<br>
+                            Main-Menu<br>
+                        </div>
+                        <div class="tab-pane active" id="excel_2" role="tabpanel">
+                            Second-Menu<br>
+                            Second-Menu<br>
+                            Second-Menu<br>
+
+                        </div>
+                        <div class="tab-pane " id="excel_3" role="tabpanel">
+                            Third-Menu<br>
+                            Third-Menu<br>
+                            Third-Menu<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="microsoft-nav powerpoint-style">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#powerpoint_1" role="tab">Powerpoint 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#powerpoint_2" role="tab">Powerpoint 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#powerpoint_3" role="tab">Powerpoint 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="powerpoint_1" role="tabpanel">
+                    Main-Menu<br>
+                    Main-Menu<br>
+                    Main-Menu<br>
+                </div>
+                <div class="tab-pane active" id="powerpoint_2" role="tabpanel">
+                    Second-Menu<br>
+                    Second-Menu<br>
+                    Second-Menu<br>
+
+                </div>
+                <div class="tab-pane " id="powerpoint_3" role="tabpanel">
+                    Third-Menu<br>
+                    Third-Menu<br>
+                    Third-Menu<br>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="microsoft-nav access-style">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#access_1" role="tab">Access 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#access_2" role="tab">Access 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#access_3" role="tab">Access 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="access_1" role="tabpanel">
+                    Main-Menu<br>
+                    Main-Menu<br>
+                    Main-Menu<br>
+                </div>
+                <div class="tab-pane active" id="access_2" role="tabpanel">
+                    Second-Menu<br>
+                    Second-Menu<br>
+                    Second-Menu<br>
+
+                </div>
+                <div class="tab-pane " id="access_3" role="tabpanel">
+                    Third-Menu<br>
+                    Third-Menu<br>
+                    Third-Menu<br>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="microsoft-nav publisher-style">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#publisher_1" role="tab">Publisher 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#publisher_2" role="tab">Publisher 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#publisher_3" role="tab">Publisher 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="publisher_1" role="tabpanel">
+                    Main-Menu<br>
+                    Main-Menu<br>
+                    Main-Menu<br>
+                </div>
+                <div class="tab-pane active" id="publisher_2" role="tabpanel">
+                    Second-Menu<br>
+                    Second-Menu<br>
+                    Second-Menu<br>
+
+                </div>
+                <div class="tab-pane " id="publisher_3" role="tabpanel">
+                    Third-Menu<br>
+                    Third-Menu<br>
+                    Third-Menu<br>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="microsoft-nav onenote-style">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#onenote_1" role="tab">OneNote 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#onenote_2" role="tab">OneNote 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#onenote_3" role="tab">OneNote 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane " id="onenote_1" role="tabpanel">
+                    Main-Menu<br>
+                    Main-Menu<br>
+                    Main-Menu<br>
+                </div>
+                <div class="tab-pane active" id="onenote_2" role="tabpanel">
+                    Second-Menu<br>
+                    Second-Menu<br>
+                    Second-Menu<br>
+
+                </div>
+                <div class="tab-pane " id="onenote_3" role="tabpanel">
+                    Third-Menu<br>
+                    Third-Menu<br>
+                    Third-Menu<br>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</main>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

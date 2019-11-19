@@ -2,21 +2,128 @@ $word_color: #2b579a;
 $word_color_hover: #124078;
 
 $excel_color: #217346;
+$excel_color_hover: #0e5c2f;
 
 $powerpoint_color: #b7472a;
+$powerpoint_color_hover: #a92b1a;
 
 $access_color: #a4373a;
+$access_color_hover: #912c2f;
 
 $publisher_color: #077568;
+$publisher_color_hover: #23645c;
 
-$onenote_color: #7719aa;
+$onenote_color: #80397b;
+$onenote_color_hover: #6c2f68;
 
 $active_tab_color: #edebe9;
-
-
+/**
+  Word-Tab-Style
+ */
 .word-style {
   .nav {
     background-color: $word_color;
+
+    .nav-item {
+      a.active {
+        color: $word_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $word_color_hover;
+      }
+    }
+  }
+}
+
+/**
+  Excel-Tab-Style
+ */
+.excel-style {
+  .nav {
+    background-color: $excel_color;
+
+    .nav-item {
+      a.active {
+        color: $excel_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $excel_color_hover;
+      }
+    }
+  }
+}
+/**
+  Powerpoint-Tab-Style
+ */
+.powerpoint-style {
+  .nav {
+    background-color: $powerpoint_color;
+
+    .nav-item {
+      a.active {
+        color: $powerpoint_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $powerpoint_color_hover;
+      }
+    }
+  }
+}
+/**
+  Access-Tab-Style
+ */
+.access-style {
+  .nav {
+    background-color: $access_color;
+
+    .nav-item {
+      a.active {
+        color: $access_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $access_color_hover;
+      }
+    }
+  }
+}
+/**
+  Publisher-Tab-Style
+ */
+.publisher-style {
+  .nav {
+    background-color: $publisher_color;
+
+    .nav-item {
+      a.active {
+        color: $publisher_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $publisher_color_hover;
+      }
+    }
+  }
+}
+/**
+  OneNote-Tab-Style
+ */
+.onenote-style {
+  .nav {
+    background-color: $onenote_color;
+
+    .nav-item {
+      a.active {
+        color: $onenote_color !important;
+      }
+      a:hover:not(.active) {
+        background-color: $onenote_color_hover;
+      }
+    }
+  }
+}
+
+
+.microsoft-nav{
+  .nav {
 
     .nav-item {
 
@@ -27,13 +134,11 @@ $active_tab_color: #edebe9;
       }
 
       a.active {
-        color: $word_color !important;
         background-color: $active_tab_color;
       }
 
 
       a:hover:not(.active) {
-        background-color: $word_color_hover;
         color: white;
         border: none;
         border-radius: 0;
@@ -84,10 +189,5 @@ $active_tab_color: #edebe9;
     }
   }
 }
-
-.excel-style {
-
-}
-
 
 

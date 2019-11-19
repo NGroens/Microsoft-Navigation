@@ -1,10 +1,2 @@
-
-.idea/$PRODUCT_WORKSPACE_FILE$
-.idea/json2java.xml
-.idea/misc.xml
-.idea/Microsoft-Navigation.iml
-.idea/modules.xml
-.idea/watcherTasks.xml
-.idea/vcs.xml
 .idea/
 src/css/.sass-cache
