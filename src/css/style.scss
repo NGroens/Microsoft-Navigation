@@ -22,7 +22,7 @@ $active_tab_color: #edebe9;
 
       a {
         color: white;
-        border: 0;
+        border: none;
         border-radius: 0;
       }
 
@@ -35,7 +35,7 @@ $active_tab_color: #edebe9;
       a:hover:not(.active) {
         background-color: $word_color_hover;
         color: white;
-        border: 0;
+        border: none;
         border-radius: 0;
 
       }
@@ -43,12 +43,13 @@ $active_tab_color: #edebe9;
   }
   .tab-content{
     background-color: $active_tab_color !important;
-
+    z-index: 99;
+    position: relative;
   }
   .tab-pane {
     background-color: $active_tab_color !important;
     min-height: 80px;
-
+    margin-top: -1px;
   }
 
   .tab-pane.active {

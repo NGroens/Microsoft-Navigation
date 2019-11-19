@@ -2,7 +2,7 @@
   background-color: #2b579a; }
   .word-style .nav .nav-item a {
     color: white;
-    border: 0;
+    border: none;
     border-radius: 0; }
   .word-style .nav .nav-item a.active {
     color: #2b579a !important;
@@ -10,13 +10,16 @@
   .word-style .nav .nav-item a:hover:not(.active) {
     background-color: #124078;
     color: white;
-    border: 0;
+    border: none;
     border-radius: 0; }
 .word-style .tab-content {
-  background-color: #edebe9 !important; }
+  background-color: #edebe9 !important;
+  z-index: 99;
+  position: relative; }
 .word-style .tab-pane {
   background-color: #edebe9 !important;
-  min-height: 80px; }
+  min-height: 80px;
+  margin-top: -1px; }
 .word-style .tab-pane.active {
   background-color: #edebe9 !important;
   animation: slide-down 0.15s; }
