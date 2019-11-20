@@ -22,7 +22,7 @@ A Bootstrap 4 design with which you can create navigation bars in the design of 
  1. OneNote - `onenote-style` ![OneNote-Image](images/onenote.png)
 
 # Example
-### [Demo](https://mrcodingmen.github.io/microsoft-natvigation/demo.html)
+### [Demo](https://mrcodingmen.github.io/microsoft-navigation/demo.html)
 Word-Demo:
 
    ```html
